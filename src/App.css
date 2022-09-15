@@ -1,38 +1,99 @@
-.App {
+body{
+  background-color: aliceblue !important;
+}
+.favContainer-Img{
+  width: 25%;
+  margin: 0 25% 0;
+}
+.map{
+  height: 100vh;
+  width: 100vw;
+  margin-top: 55px;
+ }
+ .listText {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#todo-list {
+  width: 500px;
+  margin: 60px auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form, .todo {
+  padding: 10px 20px;
+  margin-bottom: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+form input {
+  padding: 4px 8px;
+  flex-grow: 1;
+  margin-right: 16px;
+}
+.todo {
   display: flex;
   flex-direction: column;
+}
+button {
+  font-size: 16px;
+  background-color:#1A0554;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0C0B13;
+}
+button:active {
+  background-color: #0C0B13;
+}
+button:focus {
+  outline: 0;
+}
+input[type='text'] { font-size: 20px; font-family: monospace; }
+.todo input[type="checkbox"] {
+  transform: scale(1.8) translateY(1px);
+  margin: 0 16px 0 0;
+  cursor: pointer;
+}
+.todo-text input {
+  padding: 4px;
+}
+.todo-text {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.todo-completed {
+  display: flex;
+  margin: 10px 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-actions {
+  display: flex;
+  justify-content: space-between;
+}
+.footer {
+  padding: 0 0 50px 0;
+  background-color: coral;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer img{
+  width: 20%;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: black !important;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+.friends-text{
+  color: black;
 }
