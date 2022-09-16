@@ -1,8 +1,9 @@
 body{
-  background-color: aliceblue !important;
+  background-color: rgb(159, 189, 200) !important;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
 }
 .favContainer-Img{
-  width: 25%;
+  width: 50%;
   margin: 0 25% 0;
 }
 .map{
@@ -79,7 +80,7 @@ input[type='text'] { font-size: 20px; font-family: monospace; }
 }
 .footer {
   padding: 0 0 50px 0;
-  background-color: coral;
+  background-color: #0d6efd;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -90,7 +91,7 @@ input[type='text'] { font-size: 20px; font-family: monospace; }
 .footer p {
   font-weight: 400;
   font-size: 14px;
-  color: black !important;
+  color: #fff !important;
   letter-spacing: 0.5px;
   margin-top: 20px;
 }

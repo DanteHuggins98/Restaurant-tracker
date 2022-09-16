@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const App = () => {
   const [todos, setTodos] = React.useState([]);
   const [todo, setTodo] = React.useState("");
@@ -60,6 +61,7 @@ const App = () => {
   return (
     <div className="favContainer">
         <img className='favContainer-Img' src="https://images.unsplash.com/photo-1611599538235-128e54f1250f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"></img>
+        {/* <img className="favContainer-img" src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1049&q=80"></img> */}
     <div id="todo-list">
       <h1 className="listText">Favorite Restaurants</h1>
       <form onSubmit={handleSubmit}>
@@ -67,6 +69,7 @@ const App = () => {
           type="text"
           onChange={(e) => setTodo(e.target.value)}
           value={todo}
+          placeholder='Favorite Restaurants?'
         />
         <button type="submit">Add Restaurant</button>
       </form>
